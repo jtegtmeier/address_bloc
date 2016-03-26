@@ -110,5 +110,6 @@ class MenuController
   end
 
   def read_csv
+    address_book.import_from_csv("entries.csv")
   end
 end
