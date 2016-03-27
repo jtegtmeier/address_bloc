@@ -107,6 +107,11 @@ class MenuController
   end
 
   def search_entries
+    print "Enter name to search: "
+    name = gets.chomp
+    entry = address_book.binary_search(name)
+    puts entry.to_s
+    main_menu
   end
 
   def read_csv
